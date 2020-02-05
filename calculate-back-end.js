@@ -3,11 +3,10 @@
  ******************/
 function calculate(num,num2,sign){
   if (sign === '+' || sign === 'plus' || sign === 'added to') {
-    console.log(sign);
-    return +num + +num2
+    return num * 1 + num2 * 1
   }
   if (sign === '-' || sign === 'minus' || sign === 'subtracted from'){
-    return +num - +num2
+    return parseInt(num) - parseInt(num2)
   }
   if (sign === 'x' || sign === 'times' || sign === 'multiplied by' || sign === 'X'){
     return +num * +num2

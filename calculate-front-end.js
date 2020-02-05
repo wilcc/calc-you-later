@@ -12,8 +12,8 @@ const calculate = require('./calculate-back-end.js')
 
 
 // Grab the three user inputs from the command line. They'll be in a special
-// array that the node environment gives us, called "process.argv".
-
+// array that the node environment gives us, called "process.argv"
+process.argv[0]
 // Arrays are like strings, in that they have something stored at each index.
 // But unlike arrays, they don't store single-character strings--instead, they
 // can store anything of any length!
