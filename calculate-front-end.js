@@ -13,11 +13,12 @@ const calculate = require('./calculate-back-end.js')
 
 // Grab the three user inputs from the command line. They'll be in a special
 // array that the node environment gives us, called "process.argv"
-process.argv[0]
+// let num1 = process.argv[2]
+// console.log(num1)
 // Arrays are like strings, in that they have something stored at each index.
 // But unlike arrays, they don't store single-character strings--instead, they
 // can store anything of any length!
-
+// console.log(calculate(num1, '4', '+')_
 // In process.argv's case, they store the strings the user types in. The tricky
 // thing is that process.argv[0] returns the first thing the user types in,
 // which is always "node". Similarly, process.argv[1] returns the second thing
@@ -33,6 +34,32 @@ process.argv[0]
 // 5 + 5
 // 6 minus 4
 // 10 X 5
+
+
+// const num1 = process.argv[2]
+// const num2 = process.argv[4]
+// const sign = process.argv[3]
+
+// console.log(calculate(num1,num2,sign))
+
+
+
+if(process.argv[5]=== undefined){
+    const [, ,num1,sign,num2] = process.argv;
+    // console.log(process.argv[3])
+    console.log(calculate(num1,num2,sign))
+    // console.log(process.argv[1]);
+
+} else {
+
+    const sign = process.argv[3] + ' ' + process.argv[4]
+    const num1 = process.argv[2]
+    const num2 = process.argv[5]
+    console.log(calculate(num1,num2,sign))
+    
+}
+// console.log(calculate(num1,num2,sign)) 
+
 
 // Here we store what's in those process.argv indices in well-named variables.
 
